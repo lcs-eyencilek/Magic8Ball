@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		49CD996326F4F70A0063EFD0 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CD996226F4F70A0063EFD0 /* Session.swift */; };
+		49CD996526F4F71E0063EFD0 /* Magic8Ball.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CD996426F4F71E0063EFD0 /* Magic8Ball.swift */; };
+		49CD996726F4F72A0063EFD0 /* AdviceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CD996626F4F72A0063EFD0 /* AdviceViewModel.swift */; };
 		49D528E026F42D5500BD672A /* Magic8BallApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D528DF26F42D5500BD672A /* Magic8BallApp.swift */; };
 		49D528E226F42D5500BD672A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D528E126F42D5500BD672A /* ContentView.swift */; };
 		49D528E426F42D5600BD672A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49D528E326F42D5600BD672A /* Assets.xcassets */; };
@@ -34,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		49CD996226F4F70A0063EFD0 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		49CD996426F4F71E0063EFD0 /* Magic8Ball.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Magic8Ball.swift; sourceTree = "<group>"; };
+		49CD996626F4F72A0063EFD0 /* AdviceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdviceViewModel.swift; sourceTree = "<group>"; };
 		49D528DC26F42D5500BD672A /* Magic8Ball.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Magic8Ball.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49D528DF26F42D5500BD672A /* Magic8BallApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Magic8BallApp.swift; sourceTree = "<group>"; };
 		49D528E126F42D5500BD672A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -71,6 +77,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		49CD996926F7A20F0063EFD0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				49CD996226F4F70A0063EFD0 /* Session.swift */,
+				49CD996426F4F71E0063EFD0 /* Magic8Ball.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		49CD996B26F7A2240063EFD0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				49CD996626F4F72A0063EFD0 /* AdviceViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		49CD996C26F7A2320063EFD0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				49D528E126F42D5500BD672A /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		49D528D326F42D5500BD672A = {
 			isa = PBXGroup;
 			children = (
@@ -94,9 +125,11 @@
 		49D528DE26F42D5500BD672A /* Magic8Ball */ = {
 			isa = PBXGroup;
 			children = (
-				49D528DF26F42D5500BD672A /* Magic8BallApp.swift */,
-				49D528E126F42D5500BD672A /* ContentView.swift */,
 				49D528E326F42D5600BD672A /* Assets.xcassets */,
+				49D528DF26F42D5500BD672A /* Magic8BallApp.swift */,
+				49CD996926F7A20F0063EFD0 /* Model */,
+				49CD996C26F7A2320063EFD0 /* View */,
+				49CD996B26F7A2240063EFD0 /* ViewModel */,
 				49D528E526F42D5600BD672A /* Preview Content */,
 			);
 			path = Magic8Ball;
@@ -257,8 +290,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49CD996326F4F70A0063EFD0 /* Session.swift in Sources */,
 				49D528E226F42D5500BD672A /* ContentView.swift in Sources */,
+				49CD996726F4F72A0063EFD0 /* AdviceViewModel.swift in Sources */,
 				49D528E026F42D5500BD672A /* Magic8BallApp.swift in Sources */,
+				49CD996526F4F71E0063EFD0 /* Magic8Ball.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
