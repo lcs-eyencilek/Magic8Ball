@@ -9,10 +9,9 @@ import Foundation
 
 class AdviceViewModel {
     // History of advice sessions
-    var sessions: [Session] = []    // empty array to start
+    var sessions: [Session] = []
     
     // Given a question, provide some advice
-    // Library shortcut: Command-Shift-L
     func provideResponseFor(givenQuery: String, name: String) -> String {
         // Declare the Magic8Ball instance
         let magicBall = Magic8Ball()

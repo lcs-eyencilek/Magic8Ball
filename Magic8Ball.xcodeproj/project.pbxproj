@@ -10,6 +10,10 @@
 		49CD996326F4F70A0063EFD0 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CD996226F4F70A0063EFD0 /* Session.swift */; };
 		49CD996526F4F71E0063EFD0 /* Magic8Ball.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CD996426F4F71E0063EFD0 /* Magic8Ball.swift */; };
 		49CD996726F4F72A0063EFD0 /* AdviceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CD996626F4F72A0063EFD0 /* AdviceViewModel.swift */; };
+		49CD996E26F90F140063EFD0 /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CD996D26F90F140063EFD0 /* MainMenu.swift */; };
+		49CD997026F90F470063EFD0 /* GetInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CD996F26F90F470063EFD0 /* GetInput.swift */; };
+		49CD997226F90F830063EFD0 /* AnswerMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CD997126F90F830063EFD0 /* AnswerMenu.swift */; };
+		49CD997526F914850063EFD0 /* EightBall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CD997426F914850063EFD0 /* EightBall.swift */; };
 		49D528E026F42D5500BD672A /* Magic8BallApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D528DF26F42D5500BD672A /* Magic8BallApp.swift */; };
 		49D528E226F42D5500BD672A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D528E126F42D5500BD672A /* ContentView.swift */; };
 		49D528E426F42D5600BD672A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49D528E326F42D5600BD672A /* Assets.xcassets */; };
@@ -40,6 +44,10 @@
 		49CD996226F4F70A0063EFD0 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		49CD996426F4F71E0063EFD0 /* Magic8Ball.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Magic8Ball.swift; sourceTree = "<group>"; };
 		49CD996626F4F72A0063EFD0 /* AdviceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdviceViewModel.swift; sourceTree = "<group>"; };
+		49CD996D26F90F140063EFD0 /* MainMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
+		49CD996F26F90F470063EFD0 /* GetInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetInput.swift; sourceTree = "<group>"; };
+		49CD997126F90F830063EFD0 /* AnswerMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerMenu.swift; sourceTree = "<group>"; };
+		49CD997426F914850063EFD0 /* EightBall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EightBall.swift; sourceTree = "<group>"; };
 		49D528DC26F42D5500BD672A /* Magic8Ball.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Magic8Ball.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49D528DF26F42D5500BD672A /* Magic8BallApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Magic8BallApp.swift; sourceTree = "<group>"; };
 		49D528E126F42D5500BD672A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -97,9 +105,21 @@
 		49CD996C26F7A2320063EFD0 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				49CD997326F914690063EFD0 /* Components */,
 				49D528E126F42D5500BD672A /* ContentView.swift */,
+				49CD996D26F90F140063EFD0 /* MainMenu.swift */,
+				49CD996F26F90F470063EFD0 /* GetInput.swift */,
+				49CD997126F90F830063EFD0 /* AnswerMenu.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		49CD997326F914690063EFD0 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				49CD997426F914850063EFD0 /* EightBall.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		49D528D326F42D5500BD672A = {
@@ -290,9 +310,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49CD997526F914850063EFD0 /* EightBall.swift in Sources */,
+				49CD997226F90F830063EFD0 /* AnswerMenu.swift in Sources */,
 				49CD996326F4F70A0063EFD0 /* Session.swift in Sources */,
+				49CD996E26F90F140063EFD0 /* MainMenu.swift in Sources */,
 				49D528E226F42D5500BD672A /* ContentView.swift in Sources */,
 				49CD996726F4F72A0063EFD0 /* AdviceViewModel.swift in Sources */,
+				49CD997026F90F470063EFD0 /* GetInput.swift in Sources */,
 				49D528E026F42D5500BD672A /* Magic8BallApp.swift in Sources */,
 				49CD996526F4F71E0063EFD0 /* Magic8Ball.swift in Sources */,
 			);
