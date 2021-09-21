@@ -17,13 +17,13 @@ struct GetInput: View {
     var body: some View {
         HStack {
             Spacer ()
+            
             VStack {
+                
                 Spacer()
-                Color.gray.edgesIgnoringSafeArea(.all)
+                
                 EightBall()
-                Text("Magic 8 Ball wants to know...")
-                    .foregroundColor(.white)
-                    .padding()
+                BallText(content: "Magic 8 Ball wants to know...")
                 TextField("Name..." ,text: $name)
                     .autocapitalization(.none)
                     .padding()
@@ -37,8 +37,10 @@ struct GetInput: View {
                         .foregroundColor((question == "" || name == "") ? .gray : .white)
                 }
                 .disabled((question == "" || name == "") ? true : false)
+                
                 Spacer()
             }
+            
             Spacer()
         }
         .background(

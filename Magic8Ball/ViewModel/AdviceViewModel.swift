@@ -11,16 +11,34 @@ class AdviceViewModel {
     // History of advice sessions
     var sessions: [Session] = []
     
+    init () {
+        if let data = UserDefaults.standard.data(forKey: "SessionHist") {
+            if let decoded = try? JSONDecoder().decode([Session].self, from: data) {
+                self.sessions = decoded
+                return
+            }
+        }
+
+        self.sessions = []
+    }
+    
+    func saveSessionHist(sessions: [Session]) {
+        if let encoded = try? JSONEncoder().encode(sessions) {
+            UserDefaults.standard.set(encoded, forKey: "SessionHist")
+        }
+    }
+    
     // Given a question, provide some advice
     func provideResponseFor(givenQuery: String, name: String) -> String {
-        // Declare the Magic8Ball instance
+        
         let magicBall = Magic8Ball()
-        // Start an advice session
+        
         var currentSession = Session(question: givenQuery, qname: name)
-        // Use the static function right from the Magic8Ball type (no instance required!)
         currentSession.response = magicBall.getResponse()
-        // Save the question and the advice given to the history
         sessions.append(currentSession)
+        
+        // Save the updated data
+        saveSessionHist(sessions: sessions)
         
         // Give the response back
         return currentSession.response

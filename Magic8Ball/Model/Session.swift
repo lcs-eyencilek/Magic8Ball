@@ -7,10 +7,19 @@
 
 import Foundation
 
-struct Session {
-    // Question is stored here
+struct Session: Identifiable, Codable {
+    
+    var id: ObjectIdentifier
     let question: String
     let qname: String
+    
+    init(from decoder: Decoder) throws {
+        
+    }
+    
+    func encode(to encoder: Encoder) throws {
+        return
+    }
     
     // Response will be provided later
     var response: String = ""

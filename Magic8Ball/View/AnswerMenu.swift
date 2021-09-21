@@ -26,26 +26,34 @@ struct AnswerMenu: View {
     var body: some View {
         HStack() {
             Spacer()
+            
             VStack {
+                
                 Spacer()
-                Color.gray.edgesIgnoringSafeArea(.all)
+                
                 EightBall()
-                Text("So \(nInput), what you asked was '\(qInput)'. My answer is,")
-                    .foregroundColor(.white)
+                BallText(content: "So \(nInput), what you asked was '\(qInput)'. My answer is,")
                 Text(answer)
                     .foregroundColor(.yellow)
-                Text("Would you like to go again?")
-                    .foregroundColor(.white)
+                    .font(.system(size: 25))
+                BallText(content: "Would you like to go again?")
                 
                 // Navigation
-                NavigationLink(destination: GetInput()) {
-                    Text("Yes")
+                HStack {
+                    NavigationLink(destination: GetInput()) {
+                        Image("yes")
+                    }
+                    .padding()
+                    NavigationLink(destination: MainMenu()) {
+                        Image("no")
+                    }
+                    .padding()
                 }
-                NavigationLink(destination: MainMenu()) {
-                    Text("No")
-                }
+                
                 Spacer()
+                
             }
+            
             Spacer()
         }
         .background(

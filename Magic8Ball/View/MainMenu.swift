@@ -18,14 +18,30 @@ struct MainMenu: View {
                 
                 Spacer()
                 
-                Text("Magic 8 Ball").foregroundColor(.white)
+                BallText(content: "Magic 8 Ball")
                 
                 EightBall()
+                    .font(.system(size: 55))
                 
                 // Navigation
                 NavigationLink(destination: GetInput()) {
-                    Text("Play")
-                        .foregroundColor(.yellow)
+                    HStack {
+                        Image("play")
+                            .padding()
+                        Text("Play")
+                            .foregroundColor(.yellow)
+                            .font(.system(size: 55))
+                            .bold()
+                    }
+                }
+                NavigationLink(destination: HistView()) {
+                    HStack {
+                        Image("Log")
+                        Text("History Log")
+                            .foregroundColor(.white)
+                            .font(.system(size: 55))
+                            .bold()
+                    }
                 }
                 .padding()
                 
